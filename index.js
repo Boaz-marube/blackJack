@@ -1,7 +1,7 @@
 // PLAYER DATA
 const player = {
     name: "Boaz Marube",
-    chips: 10000
+    chips: 20000
 };
 
 // GAME STATE VARIABLES
@@ -48,7 +48,7 @@ function startGame() {
     renderGame();
 }
 
-// ====== FUNCTION: Render Game State ======
+// FUNCTION: Render Game State
 function renderGame() {
     // Display drawn cards
     cardsEl.textContent = "Cards: ";
@@ -74,7 +74,7 @@ function renderGame() {
     messageEl.textContent = gameMessage;
 }
 
-// ====== FUNCTION: Draw New Card ======
+// FUNCTION: Draw New Card
 function drawNewCard() {
     if (isAlive && !hasBlackJack) {
         const newCard = getRandomCard();
